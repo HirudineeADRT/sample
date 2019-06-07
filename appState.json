@@ -1,0 +1,102 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "d73ee43f-7c6a-455c-b8e6-06487dc16215": {
+        "id": "d73ee43f-7c6a-455c-b8e6-06487dc16215",
+        "parent": null,
+        "name": "sample",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "a9d5fd42-73f8-4d7f-8c15-356bf53c63f9"
+        ],
+        "isRemovable": false,
+        "filePath": "sample"
+      },
+      "a9d5fd42-73f8-4d7f-8c15-356bf53c63f9": {
+        "id": "a9d5fd42-73f8-4d7f-8c15-356bf53c63f9",
+        "parent": "d73ee43f-7c6a-455c-b8e6-06487dc16215",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "sample/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "apigeuWest2TestHirutestlondonany",
+            "config": {}
+          }
+        ]
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "d73ee43f-7c6a-455c-b8e6-06487dc16215",
+    "openFiles": [
+      "a9d5fd42-73f8-4d7f-8c15-356bf53c63f9"
+    ],
+    "currentFileId": "a9d5fd42-73f8-4d7f-8c15-356bf53c63f9",
+    "resources": {
+      "apigeuWest2TestHirutestlondonany": {
+        "name": "apigeuWest2TestHirutestlondonany",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "eu-west-2",
+          "apiMode": 0,
+          "apiName": "Test-hiru",
+          "endpointType": "EDGE",
+          "resourceMode": 0,
+          "resourceName": "testlondon",
+          "resourcePath": "/testlondon",
+          "restMethod": "ANY",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "Test",
+          "mode": 0
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "sample",
+    "projectDescription": "test",
+    "projectVersion": "1.0.0",
+    "projectRegion": "eu-west-2",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1559900439230
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "sample",
+      "url": "https://github.com/HirudineeADRT/sample"
+    }
+  }
+}
